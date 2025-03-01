@@ -13,5 +13,8 @@ public class HelloWorldController {
         return "Hello from Bridge Labz!";
     }
 
-
+    @GetMapping("/query")
+    public String sayHelloWithName(@RequestParam String name) {
+        return "Hello " + name + " from BridgeLabz!";
+    }
 }
